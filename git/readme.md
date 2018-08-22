@@ -386,3 +386,11 @@ git remote add origin git@github.com:address.git # добавляем удале
 git remote rm origin # удаляем привязанный удалённый репозиторий
 git remote add origin git@github.com:address.git # добавляем удаленный репозиторий, сокр. имя — origin
 ```
+
+###ДОПОЛНИТЕЛЬНО
+
+``` bash
+#При клонирования репозитория, клонируется только master ветка.РЕШЕНИЕ
+git branch -r
+git checkout origin/develop
+```
