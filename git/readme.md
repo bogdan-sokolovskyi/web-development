@@ -393,4 +393,10 @@ git remote add origin git@github.com:address.git # добавляем удале
 #При клонирования репозитория, клонируется только master ветка.РЕШЕНИЕ
 git branch -r
 git checkout origin/develop
+
+#git marge and push
+git branch master
+git merge origin/develop
+git commit
+git push
 ```
