@@ -399,4 +399,7 @@ git branch master
 git merge origin/develop
 git commit
 git push
+
+#клонировать нужную ветку
+git clone http://....git -b branch-name
 ```
