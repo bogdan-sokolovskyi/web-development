@@ -412,11 +412,28 @@ $ git pull origin ticket_1001_branch
 
 #git pull отличается от git merge тем, что merge только выполняет слияние веток, а pull прежде чем выполнить слияние - закачивает #изменения с удаленного сервера. merge удобно использовать для слияния веток в локальном репозитории, pull - слияния веток, когда одна #из них лежит на github.
 ```
-## Графический вывод веток
+###Графический вывод веток
 - q (выход)
 ``` bash
 git log --graph --all --oneline
 ```
 
+###deleta branch
+``` bash
+git branch -D <branchName> (c другой ветки удаляем локально)
+git push origin --delete <branchName> (c другой ветки удаляем с репы)
+```
 
+###pull,merge,push
+``` bash
+git checkout develop
+git pull
+git checkout bogdan_front
+git (add/commit/push)
+git checkout develop
+git pull
+git merge bogdan_front
+git (add/commit/push)
+git checkout bogdan_front
+```
 
