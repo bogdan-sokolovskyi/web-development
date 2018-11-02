@@ -426,8 +426,6 @@ git push origin --delete <branchName> (c другой ветки удаляем 
 
 ###pull,merge,push
 ``` bash
-git checkout develop
-git pull
 git checkout bogdan_front
 git (add/commit/push)
 git checkout develop
