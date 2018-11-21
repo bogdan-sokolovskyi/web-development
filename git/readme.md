@@ -430,6 +430,10 @@ git checkout bogdan_front
 git (add/commit/push)
 git checkout develop
 git pull
+git checkout bogdan_front
+git merge develop
+git (add/commit/push)
+git checkout develop
 git merge bogdan_front
 git (add/commit/push)
 git checkout bogdan_front
