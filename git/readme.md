@@ -435,3 +435,10 @@ git (add/commit/push)
 git checkout bogdan_front
 ```
 
+###reset to hash commit
+``` bash
+git log --all
+git reset --hard ........
+git push --force
+```
+
