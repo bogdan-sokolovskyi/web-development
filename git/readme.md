@@ -445,4 +445,8 @@ git log --all
 git reset --hard ........
 git push --force
 ```
+###reset commit(red file)
+``` bash
+git reset --mixed (...hash_commit)
+```
 
