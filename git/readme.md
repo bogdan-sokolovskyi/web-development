@@ -450,3 +450,11 @@ git push --force
 git reset --mixed (...hash_commit)
 ```
 
+###delate local branch
+``` bash
+git branch -D <branchName>
+```
+###delate remote branch
+``` bash
+git push origin --delete <branchName>
+```
