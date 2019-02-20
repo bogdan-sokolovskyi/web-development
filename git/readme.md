@@ -420,8 +420,8 @@ git log --graph --all --oneline
 
 ###deleta branch
 ``` bash
-git branch -D <branchName> (c другой ветки удаляем локально)
-git push origin --delete <branchName> (c другой ветки удаляем с репы)
+git branch -D <branchName> (branch local)
+git push origin --delete <branchName> (branch remote)
 ```
 
 ###pull,merge,push
@@ -448,13 +448,4 @@ git push --force
 ###reset commit(red file)
 ``` bash
 git reset --mixed (...hash_commit)
-```
-
-###delate local branch
-``` bash
-git branch -D <branchName>
-```
-###delate remote branch
-``` bash
-git push origin --delete <branchName>
 ```
