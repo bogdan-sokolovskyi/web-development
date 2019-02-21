@@ -449,3 +449,14 @@ git push --force
 ``` bash
 git reset --mixed (...hash_commit)
 ```
+
+###config rebase delate
+``` bash
+nano .gitconfig  (в домашней директории)
+```
+
+###pull and merge
+``` bash
+git pull
+git merge origin/<...>
+```
