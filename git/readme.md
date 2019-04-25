@@ -460,7 +460,3 @@ nano .gitconfig  (в домашней директории)
 git pull
 git merge origin/<...>
 ```
-###reset
-``` bash
-git reset --mixed <...>
-```
