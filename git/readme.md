@@ -47,6 +47,13 @@ Git — система контроля версий (файлов). Что-то
 
 ## Консольные команды
 
+### Глобальные настройки
+
+``` bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
 ### Создать новый репозиторий
 
 ``` bash
