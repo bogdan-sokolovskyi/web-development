@@ -467,3 +467,8 @@ nano .gitconfig  (в домашней директории)
 git pull
 git merge origin/<...>
 ```
+
+###override url
+``` bash
+git remote set-url origin https://...
+```
