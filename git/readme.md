@@ -52,6 +52,11 @@ Git — система контроля версий (файлов). Что-то
 ``` bash
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
+
+# show username
+git config user.name
+# show email
+git config user.email
 ```
 
 ### Создать новый репозиторий
