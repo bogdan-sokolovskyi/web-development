@@ -50,8 +50,13 @@ Git — система контроля версий (файлов). Что-то
 ### Глобальные настройки
 
 ``` bash
+#Git - set global username and email configuration
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
+
+#Git - set username and email configuration for single repository
+$ git config user.name "John Doe"
+$ git config user.email johndoe@example.com
 
 # show username
 git config user.name
