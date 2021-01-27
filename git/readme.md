@@ -365,7 +365,8 @@ git stash pop # вернуть сохраненные командой git stash
 ``` bash
 git remote -v              # показать список удалённых репозиториев, связанных с локальным
 git remote remove origin   # убрать привязку удалённого репозитория с сокр. именем origin
-git remote add origin https://github.com:nicothin/test.git # добавить удалённый репозиторий (с сокр. именем origin) с указанным URL
+git remote add origin http://....git      # добавить удалённый репозиторий (с сокр. именем origin) с указанным URL
+git remote set-url origin http://....git  # изменить origin адрес репозитория (заменит содержимое git конфига)
 git remote rm origin       # удалить привязку удалённого репозитория
 git remote show origin     # получить данные об удалённом репозитории с сокращенным именем origin
 git fetch origin           # скачать все ветки с удаленного репозитория (с сокр. именем origin), но не сливать со своими ветками
@@ -589,5 +590,4 @@ git commit -am "Navigation fixs"   # сделать коммит
 ``` bash
 git archive -o ./project.zip HEAD # создать архив с файловой структурой проекта по указанному пути (состояние репозитория, соответствующее указателю HEAD)
 nano .gitconfig  # config rebase delete(в домашней директории)
-git remote set-url origin http://....git  # изменить origin адрес репозитория (заменит содержимое git конфига)
 ```
