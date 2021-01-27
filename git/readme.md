@@ -482,3 +482,9 @@ git merge origin/<...>
 ``` bash
 git remote set-url origin https://...
 ```
+
+###pushed an empty commit
+``` bash
+git commit --allow-empty -m "Trigger rebuild"
+git push
+```
