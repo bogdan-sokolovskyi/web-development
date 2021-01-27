@@ -589,5 +589,5 @@ git commit -am "Navigation fixs"   # сделать коммит
 ``` bash
 git archive -o ./project.zip HEAD # создать архив с файловой структурой проекта по указанному пути (состояние репозитория, соответствующее указателю HEAD)
 nano .gitconfig  # config rebase delete(в домашней директории)
-git remote set-url origin http://....git  # override url
+git remote set-url origin http://....git  # изменить origin адрес репозитория (заменит содержимое git конфига)
 ```
