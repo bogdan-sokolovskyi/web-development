@@ -71,10 +71,6 @@ git config --global --unset-all user.name
 git config --global --unset-all user.email
 ```
 
-```
-git config --global core.autocrlf true # включить преобразование окончаний строк из CRLF в LF
-```
-
 
 ### Указание неотслеживаемых файлов
 
