@@ -20,3 +20,11 @@
 17.	vscode-icons
 18.	ESLint
 ```
+
+# Fix code linter at on save click ctrl+s
+Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
+``` bash
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
+},
+```
