@@ -53,3 +53,39 @@ Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
 },
 "terminal.integrated.defaultProfile.windows": "GitBash",
 ```
+
+# My work file settings.json
+``` bash
+{
+    "workbench.colorTheme": "Oceanic Next",
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.tabs.enabled": true,
+    "editor.quickSuggestions": null,
+    "html.format.contentUnformatted": "",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "terminal.integrated.automationShell.osx": "",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+          "source": "PowerShell",
+          "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+          "path": [
+            "${env:windir}\\Sysnative\\cmd.exe",
+            "${env:windir}\\System32\\cmd.exe"
+          ],
+          "args": [],
+          "icon": "terminal-cmd"
+        },
+        "GitBash": {
+          "source": "Git Bash",
+          "path": ["C:\\Program Files\\Git\\bin\\bash.exe"],
+          "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "GitBash",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+}
+```
