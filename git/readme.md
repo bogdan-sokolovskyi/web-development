@@ -368,6 +368,11 @@ git tag -n -l 'v1.*'         # показать все теги, которые 
 ``` bash
 git stash     # временно сохранить незакоммиченные изменения и убрать их из рабочей директории
 git stash pop # вернуть сохраненные командой git stash изменения в рабочую директорию
+
+git stash list [<log-options>]
+git stash show [-u|--include-untracked|--only-untracked] [<diff-options>] [<stash>]
+git stash branch <branchname> [<stash>]
+git stash clear
 ```
 
 
