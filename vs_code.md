@@ -19,6 +19,8 @@
 16.	Theme - Oceanic Next
 17.	vscode-icons
 18.	ESLint
+19. Prettier
+20. indent-rainbow
 ```
 
 ## Fix code linter at on save click ctrl+s
