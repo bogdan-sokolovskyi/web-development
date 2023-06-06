@@ -29,6 +29,8 @@ Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
 "editor.codeActionsOnSave": {
   "source.fixAll.eslint": true
 },
+"editor.formatOnSave": true,
+"eslint.format.enable": true,
 ```
 
 ## Add  default Terminal Git Bash
