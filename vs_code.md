@@ -5,7 +5,7 @@
 2.	Auto Close Tag
 3.	Auto Complete Tag
 4.	Auto Rename Tag
-5.	EditorConfig for VS Code -or- Beautify
+5.	indent-rainbow
 6.	Code Runner
 7.	GitLens — Git supercharged
 8.	Import Cost
@@ -20,7 +20,7 @@
 17.	vscode-icons
 18.	ESLint
 19. Prettier
-20. indent-rainbow
+20. EditorConfig for VS Code
 ```
 
 ## Fix code linter at on save click ctrl+s
@@ -31,6 +31,10 @@ Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
 },
 "editor.formatOnSave": true,
 "eslint.format.enable": true,
+"[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+}
 ```
 
 ## Add  default Terminal Git Bash
@@ -66,7 +70,6 @@ Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
     "terminal.integrated.tabs.enabled": true,
     "editor.quickSuggestions": null,
     "html.format.contentUnformatted": "",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "terminal.integrated.automationShell.osx": "",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -88,8 +91,16 @@ Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
         }
     },
     "terminal.integrated.defaultProfile.windows": "GitBash",
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+    "source.fixAll.eslint": true
     },
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    }
 }
 ```
