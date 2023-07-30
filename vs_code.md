@@ -18,7 +18,7 @@
 15.	Sass
 16.	Theme - Oceanic Next
 17.	vscode-icons
-18.	ESLint
+18. ESLint
 19. Prettier
 20. EditorConfig for VS Code
 ```
