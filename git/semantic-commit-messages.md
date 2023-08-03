@@ -100,6 +100,7 @@ Use the summary field to provide a succinct description of the change:
 #### NEW FEATURE
 Branch: 
 - `feat/PLAT-101`
+
 Commit: 
 - `feat: implement support for icons`
 - `feat(button): implement support for icons`
@@ -108,6 +109,7 @@ Commit:
 #### BUGFIX
 Branch: 
 - `fix/PLAT-101`
+
 Commit: 
 - `fix: reduce spacing between link label and icon`
 - `fix(icon-link): reduce spacing between link label and icon`
