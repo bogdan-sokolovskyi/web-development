@@ -1,4 +1,4 @@
-# Semantic Commit Messages
+# SEMANTIC BRANCH NAMES AND COMMIT MESSAGES IN GIT
 
 See how a minor change to your commit message style can make you a better programmer.
 
@@ -6,7 +6,6 @@ Format: `<type>(<scope>): <subject>`
 
 `<scope>` is optional
 
-## Example
 
 #### Commit Message Header
 
@@ -96,9 +95,28 @@ Use the summary field to provide a succinct description of the change:
 * no dot (.) at the end
 
 
+## Example
+
+#### NEW FEATURE
+Branch: 
+- `feat/PLAT-101`
+Commit: 
+- `feat: implement support for icons`
+- `feat(button): implement support for icons`
+- `feat(PLAT-101): implement support for icons`
+
+#### BUGFIX
+Branch: 
+- `fix/PLAT-101`
+Commit: 
+- `fix: reduce spacing between link label and icon`
+- `fix(icon-link): reduce spacing between link label and icon`
+- `fix(PLAT-101): reduce spacing between link label and icon`
+
+
 
 References:
 
+- https://dev-tips.com/git/semantic-branch-names-and-commit-messages-in-git
 - https://www.conventionalcommits.org/
-- https://seesparkbox.com/foundry/semantic_commit_messages
 - http://karma-runner.github.io/1.0/dev/git-commit-msg.html
