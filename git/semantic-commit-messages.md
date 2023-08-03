@@ -38,9 +38,11 @@ Must be one of the following:
 - `refactor`: refactoring production code, eg. renaming a variable
 - `test`: adding missing tests, refactoring tests; no production code change
 - `chore`: updating grunt tasks etc; no production code change
--  `perf`: A code change that improves performance
--  `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
--  `ci`: Changes to our CI configuration files and scripts (examples: CircleCi, SauceLabs)
+-  `perf`: a code change that improves performance
+-  `build`: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+-  `ci`: changes to our CI configuration files and scripts (examples: CircleCi, SauceLabs)
+-  `revert`: undo previous commits
+-  `style`: code formatting or code style adjustment (i.e. no product functionality change)
 
 
 ##### Scope
