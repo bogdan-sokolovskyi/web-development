@@ -41,7 +41,6 @@ Must be one of the following:
 -  `build`: changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
 -  `ci`: changes to our CI configuration files and scripts (examples: CircleCi, SauceLabs)
 -  `revert`: undo previous commits
--  `style`: code formatting or code style adjustment (i.e. no product functionality change)
 
 
 ##### Scope
