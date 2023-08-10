@@ -609,3 +609,10 @@ git commit -am "Navigation fixs"   # сделать коммит
 git archive -o ./project.zip HEAD # создать архив с файловой структурой проекта по указанному пути (состояние репозитория, соответствующее указателю HEAD)
 nano .gitconfig  # config rebase delete(в домашней директории)
 ```
+
+``` bash
+git commit -am "feat(button): some text"
+//add without rewrite commit
+git add .
+git commit --amend --no-edit
+```
