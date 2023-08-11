@@ -611,7 +611,8 @@ nano .gitconfig  # config rebase delete(в домашней директории
 ```
 
 ``` bash
-git commit -am "feat(button): some text"
+git add .
+git commit -m "feat(button): some text"
 //add without rewrite commit
 git add .
 git commit --amend --no-edit
