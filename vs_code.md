@@ -104,3 +104,10 @@ Settings -> find 'codeActionsOnSave' -> Edit in settings.json -> add script ->
     }
 }
 ```
+
+## Clearing the Visual Studio Code cache on Linux
+``` bash
+cd $HOME/.config/Code
+rm -rf "$HOME/.config/Code/Cache/*"
+rm -rf "$HOME/.config/Code/CachedData/*"
+```
