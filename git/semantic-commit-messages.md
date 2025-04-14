@@ -2,13 +2,14 @@
 
 ### Better Branch Naming Convention
 
-{type}/{sprint}-{ticket}-{short-description}
+```{type}/{sprint}-{ticket}-{short-description}```
 
 Branch: 
 - `fix/s61-PLAT-0001-header-overflow`
 - `feat/s62-PLAT-1234-dark-mode-toggle`
 
 Why?
+
 fix/ or feat/ – Clearly indicates the type of work (bug fix, feature, chore, etc.).
 * s61 – Short for Sprint 61 (avoids long names).
 * PLAT-0001 – Keeps the ticket reference.
@@ -33,8 +34,6 @@ See how a minor change to your commit message style can make you a better progra
   │
   └─⫸ Type (Mandatory): build|ci|docs|feat|fix|perf|refactor|test
 ```
-
-The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
 
 a. Type (Mandatory)
 - Type	Use Case
@@ -135,7 +134,7 @@ Branch:
 - `feat/s62-PLAT-1234-dark-mode-toggle`
 
 Commit Message Structure:
-{type}({scope}): {ticket} {subject}
+```{type}({scope}): {ticket} {subject}```
 - `fix(auth): PLAT-0001 prevent null token crash`
 - `style(buttons): PLAT-0002 increase contrast for accessibility`
 
