@@ -134,6 +134,7 @@ Branch:
 - `feat/s62-PLAT-1234-dark-mode-toggle`
 
 Commit Message Structure:
+
 ```{type}({scope}): {ticket} {subject}```
 - `fix(auth): PLAT-0001 prevent null token crash`
 - `style(buttons): PLAT-0002 increase contrast for accessibility`
