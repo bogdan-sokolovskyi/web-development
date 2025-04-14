@@ -1,29 +1,61 @@
 # SEMANTIC BRANCH NAMES AND COMMIT MESSAGES IN GIT
 
+### Better Branch Naming Convention
+
+{type}/{sprint}-{ticket}-{short-description}
+
+Branch: 
+- `fix/s61-PLAT-0001-header-overflow`
+- `feat/s62-PLAT-1234-dark-mode-toggle`
+
+Why?
+fix/ or feat/ – Clearly indicates the type of work (bug fix, feature, chore, etc.).
+* s61 – Short for Sprint 61 (avoids long names).
+* PLAT-0001 – Keeps the ticket reference.
+* header-overflow – Short description for quick recognition.
+This is cleaner and works well with automation tools (like Jira integrations).
+
 See how a minor change to your commit message style can make you a better programmer.
-
-Format: `<type>(<scope>): <subject>`
-
-`<scope>` is optional
 
 
 #### Commit Message Header
 
 ```
-<type>(<scope>): <short summary>
-  │       │             │
-  │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
+{type}({scope}): {ticket} {subject}
+  │       │          |         └─⫸ Subject (Mandatory): Summary in present tense. Not capitalized. No period at the end.
+  │       │          └─⫸ Ticket (Recommended): Include the ticket ID (e.g., PLAT-0001) for traceability.
   │       │
-  │       └─⫸ Commit Scope: animations|bazel|benchpress|common|compiler|compiler-cli|core|
+  │       └─⫸ Scope (Optional): animations|bazel|benchpress|common|compiler|compiler-cli|core|
   │                          elements|forms|http|language-service|localize|platform-browser|
   │                          platform-browser-dynamic|platform-server|router|service-worker|
   │                          upgrade|zone.js|packaging|changelog|docs-infra|migrations|
   │                          devtools
   │
-  └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
+  └─⫸ Type (Mandatory): build|ci|docs|feat|fix|perf|refactor|test
 ```
 
 The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
+
+a. Type (Mandatory)
+- Type	Use Case
+- feat	New feature
+- fix	Bug fix
+- docs	Documentation changes
+- style	UI/Cosmetic (e.g., CSS)
+- refactor	Code restructuring (no behavior change)
+- test	Test-related changes
+- chore	Build/config tasks (e.g., npm, Git)
+
+b. Scope (Optional)
+- Module/component affected (e.g., (header), (auth), (config)).
+
+c. Ticket (Recommended)
+- Include the ticket ID (e.g., PLAT-0001) for traceability.
+
+d. Subject (Mandatory)
+- Imperative tense ("fix" not "fixed" or "fixes").
+
+Short (≤50 chars), clear summary.
 
 
 ##### Type
@@ -98,21 +130,22 @@ Use the summary field to provide a succinct description of the change:
 
 #### NEW FEATURE
 Branch: 
-- `feat/PLAT-101`
+- `fix/s61-PLAT-0001`
+- `fix/s61-PLAT-0002-header-overflow`
+- `feat/s62-PLAT-1234-dark-mode-toggle`
 
-Commit: 
-- `feat: implement support for icons`
-- `feat(button): implement support for icons`
-- `feat(PLAT-101): implement support for icons`
+Commit Message Structure:
+{type}({scope}): {ticket} {subject}
+- `fix(auth): PLAT-0001 prevent null token crash`
+- `style(buttons): PLAT-0002 increase contrast for accessibility`
 
 #### BUGFIX
 Branch: 
-- `fix/PLAT-101`
+- `fix/s61-PLAT-101`
 
 Commit: 
 - `fix: reduce spacing between link label and icon`
 - `fix(icon-link): reduce spacing between link label and icon`
-- `fix(PLAT-101): reduce spacing between link label and icon`
 
 
 
